@@ -1,0 +1,9 @@
+# Texto vermelho em negrito com fundo amarelo
+print("\033[1;31;43mOlá, mundo!\033[0m")
+
+# Texto azul sublinhado com fundo cinza
+print("\033[4;34;47mPython ANSI!\033[0m")
+
+print("\033[1;32;40mTexto verde em negrito com fundo preto\033[0m")
+
+print("\033[1;96mciano claro\033[0m")

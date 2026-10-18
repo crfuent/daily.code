@@ -1,0 +1,62 @@
+import time
+
+print("\033[1;105m-CALCULADORA-\033[1;105m\033[0m")
+time.sleep(1)
+
+def menu():
+    print("\033[1;97m==MENU==\033[0m")
+    print("\033[1;95m1 - Somar\033[0m")
+    print("\033[1;95m2 - Subtrair\033[0m")
+    print("\033[1;95m3 - Multiplicar\033[0m")
+    print("\033[1;95m4 - Dividir\033[0m")
+    print("\033[1;95m5 - Sair\033[0m")
+
+def somar():
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    soma = n1 + n2
+    print(soma)
+
+def subtrair():
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    subtracao = n1 - n2
+    print(subtracao)
+
+def multiplicar():
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    multiplicacao = n1 * n2
+    print(multiplicacao)
+
+def dividir():
+    n1 = int(input ("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    if n2 == 0:
+        print("Não é possível dividir por zero.")
+    else:
+        divisao = n1 / n2
+        print(divisao)
+
+def main():
+    menu()
+    while True:
+        opcao = int(input("Escolha uma opção: "))
+        if opcao == 1:
+            print(somar())
+        elif opcao == 2:
+            print(subtrair())
+        elif opcao == 3:
+            print(multiplicar())
+        elif opcao == 4:
+            print(dividir())
+        elif opcao == 5:
+            print("obrigada por usar a calculadora!")
+            break
+        else:
+            print("opção invalida. Tente novamente.")
+
+#peincipal
+main()
+
+#finalizado 16/10/2026 por criscris :)
